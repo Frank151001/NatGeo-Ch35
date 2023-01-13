@@ -32,10 +32,30 @@ a{
 
 
 /*Navigation*/
-.navigation{
-display: block;
-background-color: white;
-margin: 0%;
+.link-login{
+    color: black;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 3px;
+}
+.link-search{
+    color: black;
+    margin: 4px;
+}
+.link-subs{
+    text-transform: uppercase;
+    color: aliceblue;
+    background-color: black;
+}
+.link-menu{
+    text-transform: uppercase;
+    color: black;
+    letter-spacing: 3px;
+    font-size: 13px;
+    margin: 4px;
+}
+.link-arrows{
+    color: black;
 }
 
 
