@@ -55,6 +55,9 @@ a.link-search{
     margin: 4px;
     display: none;
 }
+a.link-newsletters{
+    display: none;
+}
 a.link-subs{
     text-transform: uppercase;
     color: aliceblue;
@@ -75,11 +78,6 @@ a.link-subs:hover{
 }
 
 a.link-menu{
-    text-transform: uppercase;
-    color: black;
-    letter-spacing: 3px;
-    font-size: 13px;
-    margin: 4px;
     display: none;
 }
 a.link-arrows{
@@ -88,6 +86,42 @@ a.link-arrows{
 }
 a.link-arrows:hover{
     color: rgb(94, 92, 91);
+}
+@media(min-width:768px){
+    nav .logo{
+        display: block;
+        height: 38px;
+        padding-left: 15px;
+    }
+    nav .frame{
+        display: none;
+    }
+    nav a.link-menu{
+        display: inline-block;
+        text-transform: uppercase;
+        color: black;
+        letter-spacing: 3px;
+        font-size: 13px;
+        padding-right: 15px;
+    }
+    a.link-search{
+        display: inline-block;
+        color: black;
+        margin: 4px;
+    }
+    a.link-newsletters{
+        display: inline-block;
+        color: black;
+        background-image: linear-gradient(to top, #ffce00 50%, transparent 50%);
+        background-size: 100% 200%;
+        background-position: top;
+        transition: background-position 0.1s ease-in;
+        margin: 10px;
+
+    }
+    a.link-newsletters:hover{
+        background-position: bottom;
+    }
 }
 
 
@@ -128,6 +162,24 @@ a.link-arrows:hover{
     margin-bottom: 70px;
 }
 /*Main-views*/
+@media(min-width:768px){
+    main .check{
+        display: flex;
+        flex-direction: row-reverse;
+        width: 100%;
+    }
+    main .secondary-news-container{
+        display: flex;
+    }
+    .news{
+        flex-basis: 40%;
+        padding-right:300px
+    }
+    .todays-picks{
+       flex-basis: 10%;
+       padding-right: 70px;
+    }
+}
 .main-news{
     position: relative;
 }
@@ -178,6 +230,23 @@ a.link-arrows:hover{
 .secondary-news{
     height: 490px;
 }
+@media (min-width:768px) {
+    .secondary-news:first-of-type{
+        flex-basis: 45%;
+        margin-right: 35px; 
+    }
+    .secondary-news:last-of-type{
+        flex-basis: 45%;
+        margin-left: 35px;
+    }
+    main .secondary-news-text{
+        height: 175px;
+    }
+    main .secondary-news-img{
+        height: 250px;
+    }
+    
+}
 .secondary-news:hover img{
     transform: scale(1.3);
     overflow: hidden;
@@ -199,7 +268,6 @@ a.link-arrows:hover{
 .secondary-news-text:hover{
     border-top: 4px solid #ffce00;
 }
-
 .secondary-news-text{
     height: 155px;
     background-color: white;
@@ -239,6 +307,7 @@ a.link-arrows:hover{
     font-style: bold;
     letter-spacing: 3px;
     padding-left: 15px;
+    margin-top: 0;
 }
 .pick-item{
     display: flex;
